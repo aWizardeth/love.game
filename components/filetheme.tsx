@@ -31,6 +31,7 @@ export const FileTheme = ({}: FileThemeProps) => {
       {showPayment && (
         <div className="z-20">
           <Dialog
+            id=""
             closeMe={closePayment}
             width={"94%"}
             height={"200px"}
