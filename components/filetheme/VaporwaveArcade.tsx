@@ -11,6 +11,8 @@ import { FileThemeCustomOptions } from '../../system/context/FileThemeContext'
 import DeadButton from "../../assets/skins/vaporwave-arcade/dead-game-button.png";
 import ExitButton from "../../assets/skins/vaporwave-arcade/exit-button.png";
 import ActiveButton from "../../assets/skins/vaporwave-arcade/active-game-button.png";
+import BridgeIcon from "../../assets/bridge-icon.png";
+import MglthIcon from "../../assets/mglth-icon.png";
 
 const themeMap : Partial<FileThemeCustomOptions> = {
     name: 'Vaporwave Arcade',
@@ -21,6 +23,8 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     PaperIcon,
     UniswapIcon,
     WalletIcon,
+    BridgeIcon,
+    MglthIcon,
     SettingsIcon,
     ShutdownIcon,
     startLoveIcon: '/assets/skins/vaporwave-arcade/startLove.png',
