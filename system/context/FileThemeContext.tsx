@@ -14,6 +14,8 @@ export interface FileThemeCustomOptions {
   FireIcon: StaticImageData;
   FarmIcon: StaticImageData;
   PaperIcon: StaticImageData;
+  BridgeIcon: StaticImageData;
+  MglthIcon: StaticImageData;
   UniswapIcon: StaticImageData;
   WalletIcon: StaticImageData;
   SettingsIcon: StaticImageData;
@@ -22,8 +24,9 @@ export interface FileThemeCustomOptions {
   startIcon: string;
   closeIcon: string;
   background: string;
-  telegram: string;
-  twitter: string;
+  TelegramIcon: string;
+  DiscordIcon: string;
+  TwitterIcon: string;
   heartbreakIcon: string;
   heartbreakActiveButton: StaticImageData;
   heartbreakExitButton: StaticImageData;

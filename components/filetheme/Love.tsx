@@ -11,6 +11,9 @@ import SettingsIcon from '../../assets/settings.png'
 import DeadButton from "../../assets/dead-game-button.png";
 import ExitButton from "../../assets/exit-button.png";
 import ActiveButton from "../../assets/active-game-button.png";
+import BridgeIcon from "../../assets/bridge-icon.png";
+import MglthIcon from "../../assets/mglth-icon.png";
+
 import { FileThemeCustomOptions } from '../../system/context/FileThemeContext'
 
 const themeMap : Partial<FileThemeCustomOptions> = {
@@ -20,6 +23,8 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     FireIcon,
     FarmIcon,
     PaperIcon,
+    BridgeIcon,
+    MglthIcon,
     UniswapIcon,
     WalletIcon,
     SettingsIcon,
@@ -28,8 +33,9 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     startIcon: '/assets/start-icon.png',
     closeIcon: "/assets/win98Close.png",
     background: '/assets/lovegame_background.png',
-    telegram: '/assets/logo_telegram.png',
-    twitter: '/assets/logo_twitter.png',
+    TelegramIcon: '/assets/logo_telegram.png',
+    TwitterIcon: '/assets/logo_twitter.png',
+    DiscordIcon: '/assets/logo_twitter.png',
     heartbreakIcon: '/assets/start-icon.png',
     heartbreakActiveButton: ActiveButton,
     heartbreakExitButton: ExitButton,

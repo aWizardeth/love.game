@@ -10,13 +10,13 @@ import Paper from "../../components/paper";
 import Farm from "../../components/farm";
 import MglthTv from "../../components/mglth";
 import ComputerIcon from "../../assets/computer.png";
-import SettingsIcon from "../../assets/settings.png";
+//import SettingsIcon from "../../assets/settings.png";
 //import PaperIcon from "../../assets/book.png";
 //import LoveIcon from "../../assets/love-icon.png";
-import BridgeIcon from "../../assets/bridge-icon.png";
-import MglthIcon from "../../assets/mglth-icon.png";
+//import BridgeIcon from "../../assets/bridge-icon.png";
+//import MglthIcon from "../../assets/mglth-icon.png";
 import { ethers } from "ethers";
-import { contractAddressLove, contractAddressWar, TipAddress } from "../../utils/constant";
+import { contractAddressLove, contractAddressWar, TipAddress, TipENS } from "../../utils/constant";
 import { PoolAbi } from "../../system/PoolAbi";
 import { AppContracts } from "../../system/AppContracts";
 import { CopyAddressButton } from "../../components/copyAddressButton";
@@ -47,7 +47,7 @@ interface Content {
 
 const Win98 = (props: Props) => {
   const {
-    files: { background, FarmIcon, PaperIcon, startIcon, startLoveIcon, SettingsIcon, ShutdownIcon, LoveIcon },
+    files: { background, FarmIcon, PaperIcon, BridgeIcon, MglthIcon, startIcon, startLoveIcon, SettingsIcon, ShutdownIcon, LoveIcon },
     wallpaper,
     setWallpaper,
   } = useContext(FileThemeContext);
@@ -271,7 +271,7 @@ const Win98 = (props: Props) => {
           )}
           <CopyAddressButton address={contractAddressLove} label="LOVE:" />
           <CopyAddressButton address={contractAddressWar} label="WAR3:" />
-          <CopyAddressButtonTip address={TipAddress} label="Tip:" label2="Love.aWizard.eth" />
+          <CopyAddressButtonTip address={TipAddress} label="Tip:" label2={TipENS} />
         </div>
         <div className="px-1 my-auto border-b-gray-300 items-center border-r-gray-300 border-l-gray-600 text-sm border-t-gray-600 max-w-[162px] w-full h-[30px] border-[3px] text-[18px] rounded-[2px] flex flex-row justify-center items-center mr-2">
           <div>
