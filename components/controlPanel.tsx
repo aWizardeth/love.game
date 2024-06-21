@@ -21,8 +21,8 @@ const ControlPanel = ({ backgroundImage, onChangeBG, closeMe }: Props) => {
             />
             <ControlPanelTab 
                 title="File Themes"
-                isSelected={tab === 'file theme'}
-                onClick={() => setTab('file theme')}
+                //isSelected={tab === 'file theme'}   //comment out to disable theme tab
+                //onClick={() => setTab('file theme')} //comment out to disable theme tab
             />
         </div>
         <div className="flex-col border-l-gray-200 border-t-gray-200 border-r-gray-600 border-b-gray-600 border-[1.6px] w-[100%] flex aspect-[1.4] m-auto pt-2">
