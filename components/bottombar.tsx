@@ -81,7 +81,7 @@ const BottomBar = (props: Props) => {
     );
   };
 
-  const renderCopyAddressTip = (ca: string, label = "CA:", label2 = TipEns) => {
+  const renderCopyAddressTip = (ca: string, label = "CA:", label2 = TipENS) => {
     return (
       <div
         className={`flex flex-row justify-between font-windows hover:text-white hover:bg-[#0A0080] cursor-pointer sm:hidden`}
