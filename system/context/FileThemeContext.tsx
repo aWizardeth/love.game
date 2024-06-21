@@ -14,6 +14,7 @@ export interface FileThemeCustomOptions {
   LoveIcon: StaticImageData;
   FireIcon: StaticImageData;
   PaperIcon: StaticImageData;
+  BridgeIcon: StaticImageData;
   UniswapIcon: StaticImageData;
   WalletIcon: StaticImageData;
   SettingsIcon: StaticImageData;
