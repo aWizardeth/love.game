@@ -1,15 +1,16 @@
 import Image from "next/image";
 import TreeIcon from "../assets/three.png";
-import PaperIcon from "../assets/book.png";
-import SettingsIcon from "../assets/settings.png";
-import ShutdownIcon from "../assets/shutdown.png";
+//import PaperIcon from "../assets/book.png";
+//import SettingsIcon from "../assets/settings.png";
+//import ShutdownIcon from "../assets/shutdown.png";
 import BridgeIcon from "../assets/bridge.png";
 import MglthIcon from "../assets/mglth.png";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { StartMenuListItem } from "./startMenuListItem";
 import { useCopyText } from "../system/hooks/useCopyText";
 import { truncateEthAddress } from "../system/appUtils";
 import { contractAddressLove, contractAddressWar, TipAddress, BRIDGE_LINK } from "../utils/constant";
+import { FileThemeContext } from "../system/context/FileThemeContext";
 
 interface Props {
   setSelected: (selected: string) => void;
@@ -17,6 +18,7 @@ interface Props {
 
 const BottomBar = (props: Props) => {
   const [showSide, setShowSide] = useState<boolean>(false);
+  const { files: { FarmIcon, PaperIcon, startIcon, heartbreakIcon, SettingsIcon, ShutdownIcon }} = useContext(FileThemeContext);
   const { onCopyText, copied } = useCopyText();
   const list = [
     {
