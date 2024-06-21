@@ -2,7 +2,7 @@ import React, { FC, ReactNode, useContext, useState } from "react";
 import Image from "next/image";
 import { FileThemeContext } from "../system/context/FileThemeContext";
 interface DialogProps {
-  id: string;
+  //id: string;
   children: ReactNode;
   title: string;
   buttonText?: string;
@@ -78,7 +78,7 @@ const DialogLove: FC<DialogWithThemeProps> = ({
 };
 
 const DialogVaporwaveArcade: FC<DialogWithThemeProps> = ({
-  id,
+  //id,
   children,
   title,
   buttonText,
@@ -177,7 +177,7 @@ const Dialog: FC<DialogProps> = ({
       return (
         <>
           <DialogVaporwaveArcade
-            id={id}
+            //id={id}
             title={title}
             buttonText={buttonText}
             width={width}
@@ -197,7 +197,7 @@ const Dialog: FC<DialogProps> = ({
       return (
         <>
           <DialogLove
-            id={id}
+            //id={id}
             title={title}
             buttonText={buttonText}
             width={width}
