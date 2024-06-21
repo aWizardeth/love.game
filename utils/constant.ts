@@ -11,6 +11,9 @@ export const contractAddressWar: string =
   process.env.NEXT_PUBLIC_CONTRACT_WAR || "";
 export const contractAddressHeartbreak =
   process.env.NEXT_PUBLIC_CONTRACT_HEARTBREAKER!;
+export const LOVESKIN_CONTRACT_ADDRESS = 
+  process.env.NEXT_PUBLIC_LOVESKIN_CONTRACT_ADDRESS!;
+
 export const ETHLOVEPoolAddy: string =
   "0xdd97fce8441dabf221b330269750b18ba82b0cd6";
 export const USDTLOVEPoolAddy: string =
