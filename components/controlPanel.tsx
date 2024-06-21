@@ -19,11 +19,11 @@ const ControlPanel = ({ backgroundImage, onChangeBG, closeMe }: Props) => {
                 isSelected={tab === 'background'}
                 onClick={() => setTab('background')}
             />
-            <ControlPanelTab 
+           { /* <ControlPanelTab 
                 title="File Themes"
-                //isSelected={tab === 'file theme'}   //comment out to disable theme tab
-                //onClick={() => setTab('file theme')} //comment out to disable theme tab
-            />
+                isSelected={tab === 'file theme'}   //comment out to disable theme tab
+                onClick={() => setTab('file theme')} //comment out to disable theme tab
+            />*/}
         </div>
         <div className="flex-col border-l-gray-200 border-t-gray-200 border-r-gray-600 border-b-gray-600 border-[1.6px] w-[100%] flex aspect-[1.4] m-auto pt-2">
             {tab === 'background' && <Background 
