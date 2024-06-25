@@ -2,7 +2,7 @@ import Image from "next/image";
 import { MdArrowRight } from "react-icons/md";
 
 interface IPanelListItemProps {
-  haveSub: boolean | undefined;
+  haveSub?: boolean; // Make haveSub optional
   onSelected: (selected: string) => void;
   onShowSide: (showSide: boolean) => void;
   icon: any;

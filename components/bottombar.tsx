@@ -263,7 +263,7 @@ const BottomBar = (props: Props) => {
                 icon={item.icon}
                 name={item.name}
                 menu={item.menu}
-                haveSub={item.hasOwnProperty('haveSub') ? item.haveSub : undefined}
+                haveSub={item.haveSub}
               />
             ))}
 
@@ -277,7 +277,7 @@ const BottomBar = (props: Props) => {
                 name={item.name}
                 menu={item.menu}
                 link={item.link} // Pass the link prop
-                haveSub={item.hasOwnProperty('haveSub') ? item.haveSub : undefined}
+                haveSub={item.haveSub}
               />
             ))}
         </div>
