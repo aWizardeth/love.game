@@ -84,7 +84,7 @@ const BottomBar = (props: Props) => {
       name: "<u>H</u>EARTBREAK",
     },
     {
-      menu: "cp",
+      menu: "settings",
       icon: SettingsIcon,
       name: "<u>S</u>ettings",
       haveSub: true,
@@ -254,7 +254,7 @@ const BottomBar = (props: Props) => {
             left: "240px",
           }}
         >
-          {list[sidePosition]?.menu === "cp" &&
+          {list[sidePosition]?.menu === "settings" &&
             list_cp.map((item, index) => (
               <PanelListItem
                 key={`cp-panel-list-item-${index}`}
@@ -263,7 +263,7 @@ const BottomBar = (props: Props) => {
                 icon={item.icon}
                 name={item.name}
                 menu={item.menu}
-                haveSub={item.haveSub}
+               
               />
             ))}
 
@@ -277,7 +277,7 @@ const BottomBar = (props: Props) => {
                 name={item.name}
                 menu={item.menu}
                 link={item.link} // Pass the link prop
-                haveSub={item.haveSub}
+                
               />
             ))}
         </div>
