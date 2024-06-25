@@ -258,12 +258,12 @@ const BottomBar = (props: Props) => {
             list_cp.map((item, index) => (
               <PanelListItem
                 key={`cp-panel-list-item-${index}`}
-                haveSub={item.haveSub}
                 onSelected={(selected) => props.setSelected(selected)}
                 onShowSide={(showSide) => handleShowSide(showSide, index)}
                 icon={item.icon}
                 name={item.name}
                 menu={item.menu}
+                haveSub={item.hasOwnProperty('haveSub') ? item.haveSub : undefined}
               />
             ))}
 
@@ -271,13 +271,13 @@ const BottomBar = (props: Props) => {
             list_chia.map((item, index) => (
               <PanelListItem
                 key={`panel-list-item-${index}`}
-                haveSub={item.haveSub}
                 onSelected={(selected) => props.setSelected(selected)}
                 onShowSide={(showSide) => handleShowSide(showSide, index)}
                 icon={item.icon}
                 name={item.name}
                 menu={item.menu}
                 link={item.link} // Pass the link prop
+                haveSub={item.hasOwnProperty('haveSub') ? item.haveSub : undefined}
               />
             ))}
         </div>
