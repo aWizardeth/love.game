@@ -63,7 +63,7 @@ export const themeMap: { [key in FileTheme]: Partial<FileThemeCustomOptions> } =
   {
     love: Love,
     "vaporwave-arcade": VaporwaveArcade,
-    "Tang Gang": TangGang,
+    "tang-gang": TangGang,
   };
 
 export const FileThemeContext = createContext<IFileTheme>({} as IFileTheme);
@@ -117,7 +117,7 @@ export const FileThemeProvider = ({ children }: { children: any }) => {
         wallpaper,
       }}
     >
-      <div key={fileTheme} className={fileTheme === 'love' ? 'theme-love' : fileTheme === 'vaporwave' ? 'theme-vaporwave-arcade' : 'theme-tang-gang'}>
+      <div className={fileTheme === 'love' ? 'theme-love' : fileTheme === 'vaporwave-arcade' ? 'theme-vaporwave-arcade' : 'theme-tang-gang'}>
       {children}
       </div>
     </FileThemeContext.Provider>
