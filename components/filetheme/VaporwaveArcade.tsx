@@ -29,7 +29,7 @@ import BasebearsIcon from "../../assets/basebears-icon.png";
 import DexscreenerIcon from "../../assets/dexscreener-icon.png";
 import TGtwitterIcon from "../../assets/tgtwitter-icon.png";
 import OmakIcon from "../../assets/omak-icon.png";
-import BabiesIcon from "../../assets/Babies-icon.png";
+import BabiesIcon from "../../assets/babies-icon.png";
 import WTIcon from "../../assets/wt-icon.png";
 import GooeyIcon from "../../assets/gooey-icon.png";
 import PokeganIcon from "../../assets/pokegan-icon.png";
