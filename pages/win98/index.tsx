@@ -8,6 +8,7 @@ import ActiveButton from "../../components/activeButton";
 import ControlPanel from "../../components/controlPanel";
 import Paper from "../../components/paper";
 import Farm from "../../components/farm";
+import Loveswap from "../../components/loveswap";
 import MglthTv from "../../components/mglth";
 import ComputerIcon from "../../assets/computer.png";
 import { ethers } from "ethers";
@@ -42,7 +43,7 @@ interface Content {
 
 const Win98 = (props: Props) => {
   const {
-    files: { background, FarmIcon, PaperIcon, BridgeIcon, MglthIcon, startIcon, startLoveIcon, SettingsIcon, ShutdownIcon, LoveIcon },
+    files: { background, FarmIcon, PaperIcon, BridgeIcon, MglthIcon, startIcon, startLoveIcon, SettingsIcon, FireIcon, LoveIcon },
     wallpaper,
     setWallpaper,
   } = useContext(FileThemeContext);
@@ -177,6 +178,14 @@ const Win98 = (props: Props) => {
       width: "200px",
       height: "80px",
       icon: SettingsIcon,
+    },
+    {
+      menu: "loveswap",
+      title: "Love Swap",
+      component: <Loveswap />,
+      width: "720px",
+      height: "300px",
+      icon: FireIcon,
     },
     // {
     //   menu: "claim",

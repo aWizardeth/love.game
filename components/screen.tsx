@@ -96,7 +96,7 @@ const Screen = ({
       label: "Farm $LOVE",
     },
     {
-      onClick: () => window.open(WAR3_SWAP_LINK, "_blank"),
+      onClick: () => setSelected("loveswap"),
       icon: FireIcon,
       label: "Swap $WAR3",
     },
