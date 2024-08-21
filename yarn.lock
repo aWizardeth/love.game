@@ -2247,7 +2247,7 @@
     "@typescript-eslint/types" "6.13.2"
     eslint-visitor-keys "^3.4.1"
 
-"@uniswap/conedison@^1.8.0":
+"@uniswap/conedison@^0.0.10", "@uniswap/conedison@^1.8.0":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@uniswap/conedison/-/conedison-1.8.0.tgz#60fcfa1475780350a719510ccee1f6a49f8c5cf8"
   integrity sha512-EeC37bbrd4sJnqW3TxNhExdWUBvzyJDhbTXcbDzFdBh/bg5sOCu1NbYJEnrjwBHEfewc9nF2OjEzejJFyJUx9A==
@@ -2469,7 +2469,7 @@
     "@uniswap/v3-core" "1.0.0"
     "@uniswap/v3-periphery" "^1.0.1"
 
-"@uniswap/widgets@latest":
+"@uniswap/widgets@^0.0.10":
   version "2.59.0"
   resolved "https://registry.yarnpkg.com/@uniswap/widgets/-/widgets-2.59.0.tgz#31eb1f373289343f76daba9f15c3da0d270b1dff"
   integrity sha512-oAGC/5xFXe9VWC1F4ZMSIz+3Na1BohgufQsqzTR5ytQlNGfdY1i/XVvsyb+FVym0vIQdJ19Rcl913TkKnmGV4A==

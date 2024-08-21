@@ -1,5 +1,5 @@
-import { SwapWidget } from '@uniswap/widgets'
-import '@uniswap/widgets/fonts.css'
+//import { SwapWidget } from '@uniswap/widgets'
+//import '@uniswap/widgets/fonts.css'
 
 import { useEffect, useState } from "react";
 import { useAccount } from "wagmi";
