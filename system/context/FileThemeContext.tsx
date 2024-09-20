@@ -67,9 +67,6 @@ export interface FileThemeCustomOptions {
   TylerIcon: StaticImageData;
   TylerQIcon: StaticImageData;
   TylerGHIcon: StaticImageData;
-  TylerIcon: StaticImageData;
-  TylerQIcon: StaticImageData;
-  TylerGHIcon: StaticImageData;
   VoteIcon: StaticImageData;
 }
 
