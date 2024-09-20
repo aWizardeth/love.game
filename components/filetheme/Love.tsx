@@ -46,6 +46,10 @@ import SpeechlessIcon from "../../assets/speechless-icon.png";
 import LoveBearIcon from "../../assets/love-bear-icon.png";
 import aWizardIcon from "../../assets/awizard-icon.png";
 
+import TylerIcon from "../../assets/tyler-icon.png";
+import TylerQIcon from "../../assets/tyler-q-icon.png";
+import TylerGHIcon from "../../assets/tyler-gh-icon.png";
+
 import { FileThemeCustomOptions } from '../../system/context/FileThemeContext'
 
 const themeMap : Partial<FileThemeCustomOptions> = {
@@ -91,6 +95,9 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     SpeechlessIcon,
     LoveBearIcon,
     aWizardIcon,
+    TylerIcon,
+    TylerQIcon,
+    TylerGHIcon,
 
     startLoveIcon: '/assets/startLove.png',
     startIcon: '/assets/start-icon.png',
