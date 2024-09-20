@@ -48,6 +48,10 @@ import aWizardIcon from "../../assets/awizard-icon.png";
 
 import VoteIcon from "../../assets/vote-icon.png";
 
+import TylerIcon from "../../assets/tyler-icon.png";
+import TylerQIcon from "../../assets/tyler-q-icon.png";
+import TylerGHIcon from "../../assets/tyler-gh-icon.png";
+
 const themeMap : Partial<FileThemeCustomOptions> = {
     name: 'Vaporwave Arcade',
     EtherscanIcon,
@@ -92,6 +96,10 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     LoveBearIcon,
     aWizardIcon,
 
+    TylerIcon,
+    TylerQIcon,
+    TylerGHIcon,
+    
     VoteIcon,
 
     startLoveIcon: '/assets/skins/vaporwave-arcade/startLove.png',

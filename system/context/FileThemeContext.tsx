@@ -65,6 +65,10 @@ export interface FileThemeCustomOptions {
   NemoRinoIcon: StaticImageData;
 
  VoteIcon: StaticImageData;
+ TylerIcon: StaticImageData;
+ TylerQIcon: StaticImageData;
+ TylerGHIcon: StaticImageData;
+ 
 }
 
 export interface IFileTheme {
