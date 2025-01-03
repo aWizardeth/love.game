@@ -26,6 +26,7 @@ import WalletIcon from '../../assets/skins/vaporwave-arcade/wallet.png'
 import SpaceIcon from "../../assets/space-icon.png"
 import TangbearsIcon from "../../assets/tangbears-icon.png"
 import TGtwitterIcon from "../../assets/tgtwitter-icon.png"
+import TGDiscordIcon from "../../assets/tgdiscord-icon.png"
 import TibetIcon from "../../assets/tibet-icon.jpg"
 import { FileThemeCustomOptions } from '../../system/context/FileThemeContext'
 
@@ -81,6 +82,7 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     BasebearsIcon,
     DexscreenerIcon,
     TGtwitterIcon,
+    TGDiscordIcon,
     SettingsIcon,
     ShutdownIcon,
 

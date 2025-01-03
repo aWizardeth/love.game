@@ -23,6 +23,7 @@ import ShutdownIcon from '../../assets/shutdown.png'
 import SpaceIcon from "../../assets/space-icon.png"
 import TangbearsIcon from "../../assets/tangbears-icon.png"
 import TGtwitterIcon from "../../assets/tgtwitter-icon.png"
+import TGDiscordIcon from "../../assets/tgdiscord-icon.png"
 import TibetIcon from "../../assets/tibet-icon.jpg"
 import FarmIcon from '../../assets/tree.png'
 import UniswapIcon from '../../assets/uniswap.png'
@@ -80,6 +81,7 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     BasebearsIcon,
     DexscreenerIcon,
     TGtwitterIcon,
+    TGDiscordIcon,
     SettingsIcon,
     ShutdownIcon,
 
@@ -101,7 +103,7 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     background: '/assets/lovegame_background.png',
     TelegramIcon: '/assets/logo_telegram.png',
     TwitterIcon: '/assets/logo_twitter.png',
-    DiscordIcon: '/assets/logo_twitter.png',
+    DiscordIcon: '/assets/logo_discord.png',
     heartbreakIcon: '/assets/start-icon.png',
     
     heartbreakActiveButton: ActiveButton,
