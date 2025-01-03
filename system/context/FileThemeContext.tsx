@@ -53,6 +53,7 @@ export interface FileThemeCustomOptions {
   BasebearsIcon: StaticImageData;
   DexscreenerIcon: StaticImageData;
   TGtwitterIcon: StaticImageData;
+  TGDiscordIcon: StaticImageData;
 
   ArtIcon: StaticImageData;
   SpeechlessIcon: StaticImageData;
