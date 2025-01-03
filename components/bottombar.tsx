@@ -67,6 +67,7 @@ const [sidePosition2, setSidePosition2] = useState<number | null>(null);
       FarmIcon,
       PaperIcon,
       BridgeIcon,
+      LoveIcon,
       HeartBridgeIcon,
       MglthIcon,
       OmakIcon,
@@ -175,6 +176,11 @@ const [sidePosition2, setSidePosition2] = useState<number | null>(null);
   ];
 
   const list_cp = [
+    {
+      menu: "swap",
+      icon: LoveIcon,
+      name: "<u>D</u>ev",
+    },
     {
       menu: "cp",
       icon: SettingsIcon,
