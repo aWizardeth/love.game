@@ -33,11 +33,6 @@ export const PanelListItem = ({
     // If haveSub is true, you might want to handle another logic here
   };
 
-  const isEmoji = (str: string) => {
-    const regex = /[\p{Emoji_Presentation}\p{Extended_Pictographic}]/u;
-    return regex.test(str);
-  };
-
   return (
     <div
       className="flex flex-row justify-between font-windows hover:text-white hover:bg-[#0A0080] cursor-pointer"
@@ -50,13 +45,9 @@ export const PanelListItem = ({
       // onMouseLeave={() => !haveSub && onShowSide(false)} // Unnecessary comment
       onClick={handleClick}
     >
-     <div className="flex flex-row items-center w-full">
+      <div className="flex flex-row items-center w-full">
         <div className="py-1 justify-center items-center w-[55px] flex">
-          {isEmoji(icon) ? (
-            <span className="text-[25px]">{icon}</span>
-          ) : (
-            <Image src={icon} width={25} height={25} alt="icon" />
-          )}
+          {typeof icon == "string" ? icon : <Image src={icon} width={25} height={25} alt="icon" />}
         </div>
         <div className="text-[16px]">
           <span dangerouslySetInnerHTML={{ __html: name }}></span>

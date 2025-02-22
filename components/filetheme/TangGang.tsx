@@ -5,7 +5,6 @@ import BridgeIcon from "../../assets/bridge-icon.png"
 import { default as ChiaIcon, default as TradeIcon } from "../../assets/chia-icon.png"
 import CLinksIcon from "../../assets/clinks-icon.png"
 import DexieIcon from "../../assets/dexie-icon.svg"
-import SageIcon from "../../assets/sage-icon.png"
 import DexscreenerIcon from "../../assets/dexscreener-icon.png"
 import FarmerIcon from "../../assets/farmer-icon.jpg"
 import GobyIcon from "../../assets/goby-icon.png"
@@ -23,7 +22,6 @@ import ExitButton from "../../assets/skins/vaporwave-arcade/exit-button.png"
 import FarmIcon from '../../assets/skins/vaporwave-arcade/farm.png'
 import FireIcon from '../../assets/skins/vaporwave-arcade/fire-icon.png'
 import LoveIcon from '../../assets/skins/vaporwave-arcade/love-icon.png'
-import HeartBreakIcon from '../../assets/heartbreak-icon.png'
 import PaperIcon from '../../assets/skins/vaporwave-arcade/paper.png'
 import SettingsIcon from '../../assets/skins/vaporwave-arcade/settings.png'
 import ShutdownIcon from '../../assets/skins/vaporwave-arcade/shutdown.png'
@@ -31,7 +29,6 @@ import UniswapIcon from '../../assets/skins/vaporwave-arcade/uniswap.png'
 import WalletIcon from '../../assets/skins/vaporwave-arcade/wallet.png'
 import SpaceIcon from "../../assets/space-icon.png"
 import TangbearsIcon from "../../assets/tangbears-icon.png"
-import TwitterIcon from "../../assets/twitter-icon.png"
 import TGtwitterIcon from "../../assets/tgtwitter-icon.png"
 import TGDiscordIcon from "../../assets/tgdiscord-icon.png"
 import TibetIcon from "../../assets/tibet-icon.jpg"
@@ -75,7 +72,6 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     MintIcon, 
     TradeIcon, 
     DexieIcon, 
-    SageIcon, 
     TibetIcon, 
     FarmerIcon,
     HoaIcon,
@@ -87,7 +83,6 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     TGDiscordIcon,
     SettingsIcon,
     ShutdownIcon,
-    HeartBreakIcon,
 
     ArtIcon,
     MaxIcon,
@@ -105,10 +100,10 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     startIcon: '/assets/skins/vaporwave-arcade/start-icon.gif',
     closeIcon: '/assets/skins/vaporwave-arcade/close.png',
     background: '/assets/skins/tang-gang/background.png',
-    
-    TwitterIcon,
-    discordIcon: '/assets/skins/vaporwave-arcade/logo_discord.png',
-    telegramIcon: '/assets/skins/vaporwave-arcade/logo_telegram.png',
+    TelegramIcon: '/assets/skins/vaporwave-arcade/logo_telegram.png',
+    TwitterIcon: '/assets/skins/vaporwave-arcade/logo_twitter.png',
+    DiscordIcon: '/assets/skins/vaporwave-arcade/logo_discord.png',
+    heartbreakIcon: '/assets/skins/vaporwave-arcade/heartbreak.png',
 
     heartbreakActiveButton: ActiveButton,
     heartbreakExitButton: ExitButton,

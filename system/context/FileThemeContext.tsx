@@ -1,12 +1,12 @@
 import { StaticImageData } from "next/image";
-import React, { useEffect, createContext, useState, useMemo } from "react";
+import React, { useEffect } from "react";
+import { createContext } from "react";
 
 import VaporwaveArcade from "../../components/filetheme/VaporwaveArcade";
 import Love from "../../components/filetheme/Love";
 import TangGang from "../../components/filetheme/TangGang";
-import aWizard from "../../components/filetheme/aWizard";
 
-export type FileTheme = "love" | "vaporwave-arcade" | "tang-gang" | "awizard";
+export type FileTheme = "love" | "vaporwave-arcade" | "tang-gang";
 
 export interface FileThemeCustomOptions {
   name: string;
@@ -31,20 +31,19 @@ export interface FileThemeCustomOptions {
   startIcon: string;
   closeIcon: string;
   background: string;
-  telegramIcon: string;
-  discordIcon: string;
-  TwitterIcon: StaticImageData;
-  HeartBreakIcon: StaticImageData;
+  TelegramIcon: string;
+  DiscordIcon: string;
+  TwitterIcon: string;
+  heartbreakIcon: string;
   heartbreakActiveButton: StaticImageData;
   heartbreakExitButton: StaticImageData;
   heartbreakDeadButton: StaticImageData;
   ChiaIcon: StaticImageData;
   GobyIcon: StaticImageData;
   SpaceIcon: StaticImageData;
-  MintIcon: StaticImageData;
-  TradeIcon: StaticImageData;
-  DexieIcon: StaticImageData;
-  SageIcon: StaticImageData;
+  MintIcon:  StaticImageData;
+  TradeIcon:  StaticImageData;
+  DexieIcon:  StaticImageData;
   TibetIcon: StaticImageData;
   FarmerIcon: StaticImageData;
   CLinksIcon: StaticImageData;
@@ -55,17 +54,21 @@ export interface FileThemeCustomOptions {
   DexscreenerIcon: StaticImageData;
   TGtwitterIcon: StaticImageData;
   TGDiscordIcon: StaticImageData;
+
   ArtIcon: StaticImageData;
   SpeechlessIcon: StaticImageData;
   LoveBearIcon: StaticImageData;
   aWizardIcon: StaticImageData;
+
   DBCIcon: StaticImageData;
   PainIcon: StaticImageData;
   NemoIcon: StaticImageData;
   NemoRinoIcon: StaticImageData;
+
   MaxIcon: StaticImageData;
   TreeIcon: StaticImageData;
-  VoteIcon: StaticImageData;
+  
+ VoteIcon: StaticImageData;
 }
 
 export interface IFileTheme {
@@ -76,14 +79,14 @@ export interface IFileTheme {
   setWallpaper: (wallpaper: string) => void;
 }
 
-const defaultTheme: FileTheme = "awizard";
+const defaultTheme: FileTheme = "vaporwave-arcade";
 
-export const themeMap: { [key in FileTheme]: Partial<FileThemeCustomOptions> } = {
-  love: Love,
-  "vaporwave-arcade": VaporwaveArcade,
-  "tang-gang": TangGang,
-  "awizard": aWizard,
-};
+export const themeMap: { [key in FileTheme]: Partial<FileThemeCustomOptions> } =
+  {
+    love: Love,
+    "vaporwave-arcade": VaporwaveArcade,
+    "tang-gang": TangGang,
+  };
 
 export const FileThemeContext = createContext<IFileTheme>({} as IFileTheme);
 
@@ -94,18 +97,24 @@ export const FileThemeProvider = ({ children }: { children: any }) => {
   });
 
   const setBodyThemeClass = (theme: FileTheme) => {
+    // tailwindcss adds theme class to a div that is not the parent of the rainbowkit modal
+    // this code adds the theme class to the body so that the rainbowkit modal can be styled correctly
     const body = document.querySelector("body");
     body!.className = `theme-${theme}`;
-  };
+  }
 
   useEffect(() => {
     const localStorageFileTheme = localStorage.getItem("fileTheme");
     if (!localStorageFileTheme) {
-      setBodyThemeClass(defaultTheme);
+      setBodyThemeClass(defaultTheme as FileTheme);
       return;
     }
     setBodyThemeClass(localStorageFileTheme as FileTheme);
-  }, []);
+    // const theme = JSON.parse(localStorageFileTheme) as FileTheme;
+    // if (theme !== fileTheme) {
+    //   _setFileTheme(theme);
+    // }
+  }, [])
 
   const files = React.useMemo(() => {
     return {
@@ -114,11 +123,11 @@ export const FileThemeProvider = ({ children }: { children: any }) => {
     } as FileThemeCustomOptions;
   }, [fileTheme]);
 
-  const setFileTheme = (newTheme: FileTheme) => {
-    localStorage.setItem("fileTheme", newTheme);
-    _setFileTheme(newTheme);
-    setBodyThemeClass(newTheme);
-  };
+  const setFileTheme = (fileTheme: FileTheme) => {
+    _setFileTheme(fileTheme);
+    localStorage.setItem("fileTheme", fileTheme);
+    setBodyThemeClass(fileTheme);
+  }
 
   return (
     <FileThemeContext.Provider
@@ -130,20 +139,9 @@ export const FileThemeProvider = ({ children }: { children: any }) => {
         wallpaper,
       }}
     >
-      <div
-        className={
-          fileTheme === "love"
-            ? "theme-love"
-            : fileTheme === "vaporwave-arcade"
-            ? "theme-vaporwave-arcade"
-            : fileTheme === "tang-gang"
-            ? "theme-tang-gang"
-            : "theme-awizard"
-        }
-      >
-        {children}
+      <div className={fileTheme === 'love' ? 'theme-love' : fileTheme === 'vaporwave-arcade' ? 'theme-vaporwave-arcade' : 'theme-tang-gang'}>
+      {children}
       </div>
     </FileThemeContext.Provider>
   );
 };
-

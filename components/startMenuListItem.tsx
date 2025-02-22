@@ -40,12 +40,10 @@ export const StartMenuListItem = ({
         <div className="py-1 justify-center items-center w-[55px] flex">
           <Image src={icon} width={25} height={25} alt="icon" />
         </div>
-
         <div className="text-[18px]">
 
           <span dangerouslySetInnerHTML={{ __html: name }}></span> 
         </div>
-        
       </div>
       <div className="mt-1 ml-2">
         {haveSub ? <MdArrowRight className="text-black text-[30px]" /> : null}
