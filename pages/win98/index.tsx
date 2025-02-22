@@ -8,6 +8,7 @@ import ActiveButton from "../../components/activeButton";
 import ControlPanel from "../../components/controlPanel";
 import Paper from "../../components/paper";
 import Farm from "../../components/farm";
+import Swap from "../../components/swap";
 import MglthTv from "../../components/mglth";
 import ComputerIcon from "../../assets/computer.png";
 import { ethers } from "ethers";
@@ -178,6 +179,14 @@ const Win98 = (props: Props) => {
       height: "80px",
       icon: SettingsIcon,
     },
+    {
+      menu: "swap",
+      title: "LOVE SWAP",
+      component: <Swap />,
+      width: "720px",
+      height: "300px",
+      icon: LoveIcon,
+    }
     // {
     //   menu: "claim",
     //   title: "CLAIM",
