@@ -31,10 +31,10 @@ export interface FileThemeCustomOptions {
   startIcon: string;
   closeIcon: string;
   background: string;
-  TelegramIcon: string;
-  DiscordIcon: string;
-  TwitterIcon: string;
-  heartbreakIcon: string;
+  telegramIcon: string;
+  discordIcon: string;
+  TwitterIcon: StaticImageData;
+  HeartBreakIcon: StaticImageData;
   heartbreakActiveButton: StaticImageData;
   heartbreakExitButton: StaticImageData;
   heartbreakDeadButton: StaticImageData;
