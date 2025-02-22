@@ -45,7 +45,7 @@ const Screen = ({
     LoveIcon, MglthIcon, 
     GooeyIcon, BridgeIcon, 
     HeartBridgeIcon, TwitterIcon, 
-    TelegramIcon, DiscordIcon, 
+  
     VoteIcon } } = useContext(FileThemeContext)
  // const { address, connector, isConnected } = useAccount();
   //const [hide, setHide] = useState<boolean>(true);
@@ -101,8 +101,8 @@ const Screen = ({
                   <Image
                     src={item.icon}
                     alt="icon"
-                    height={item.logoHeight ?? 80}
-                    width={item.logoHeight ?? 80}
+                    height={80}
+                    width={80}
                   />
                   {item.label && (
                     <div className="text-[rgba(255,255,255,.80)] text-lg mt-2">
