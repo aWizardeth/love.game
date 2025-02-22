@@ -40,59 +40,32 @@ const Screen = ({
   wallpaper,
   onTrigger,
 }: ScreenProps) => {  
-  const { files: {PaperIcon, FireIcon, LoveIcon, MglthIcon, GooeyIcon, BridgeIcon, HeartBridgeIcon, TwitterIcon, TelegramIcon, DiscordIcon, VoteIcon } } = useContext(FileThemeContext)
+  const { files: {
+    PaperIcon, FireIcon, 
+    LoveIcon, MglthIcon, 
+    GooeyIcon, BridgeIcon, 
+    HeartBridgeIcon, TwitterIcon, 
+    TelegramIcon, DiscordIcon, 
+    VoteIcon } } = useContext(FileThemeContext)
  // const { address, connector, isConnected } = useAccount();
   //const [hide, setHide] = useState<boolean>(true);
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const iconsLeft = [
+    
     {
-      onClick: () => window.open(DISCORD_LINK, "_blank"),
-      icon: DiscordIcon,
-      label: "Discord",
-      logoHeight: 60,
-    },
-    {
-      onClick: () => window.open(TWITTER_LINK, "_blank"),
-      icon: TwitterIcon,
-      label: "Love Twitter",
-      logoHeight: 60,
-    },
-    {
-      onClick: () => window.open(WAR3_TWITTER_LINK, "_blank"),
-      icon: TwitterIcon,
-      label: "War3 Twitter",
-      logoHeight: 60,
-    },
-    {
-      onClick: () => window.open(TELEGRAM_LINK, "_blank"),
-      icon: TelegramIcon,
-      label: "Telegram",
-      logoHeight: 60,
-    },
+      onClick: () => window.open(WAR3_SWAP_LINK, "_blank"),
+      icon: FireIcon,
+      label: "Swap $WAR3",
+    }
+
   ];
-
   const iconsCenter = [
-    {
-      onClick: () => setSelected("mglth"),
-      icon: MglthIcon,
-      label: "Megalith TV",
 
-    },
     {
       onClick: () => window.open(BRIDGE_LINK, "_blank"),
       icon: HeartBridgeIcon,
       label: "Warp Bridge",
-    },
-    {
-      onClick: () => window.open(VOTE_LINK, "_blank"),
-      icon: VoteIcon,
-      label: "VOTE",
-    },
-            {
-      onClick: () => window.open(GOOEYS_LINK, "_blank"),
-      icon: GooeyIcon,
-      label: "Eth Gobblers",
-    },
+    }
   ];
 
   const iconsRight = [
@@ -100,17 +73,7 @@ const Screen = ({
       onClick: () => setSelected("farm"),
       icon: LoveIcon,
       label: "Farm $LOVE",
-    },
-    {
-      onClick: () => window.open(WAR3_SWAP_LINK, "_blank"),
-      icon: FireIcon,
-      label: "Swap $WAR3",
-    },
-    {
-      onClick: () => setSelected("paper"),
-      icon: PaperIcon,
-      label: "Paper",
-    },
+    }
   ];
 
   useEffect(() => {
