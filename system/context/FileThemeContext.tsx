@@ -44,6 +44,7 @@ export interface FileThemeCustomOptions {
   MintIcon:  StaticImageData;
   TradeIcon:  StaticImageData;
   DexieIcon:  StaticImageData;
+  SageIcon:  StaticImageData;
   TibetIcon: StaticImageData;
   FarmerIcon: StaticImageData;
   CLinksIcon: StaticImageData;
@@ -79,7 +80,7 @@ export interface IFileTheme {
   setWallpaper: (wallpaper: string) => void;
 }
 
-const defaultTheme: FileTheme = "vaporwave-arcade";
+const defaultTheme: FileTheme = "tang-gang";
 
 export const themeMap: { [key in FileTheme]: Partial<FileThemeCustomOptions> } =
   {
