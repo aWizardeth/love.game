@@ -68,6 +68,7 @@ export const VOTE_LINK = "https://snapshot.org/#/love.awizard.eth";
 //chia links
 export const CHIA_LINK = "https://www.chia.net/downloads/";
 export const GOBY_LINK = "https://www.goby.app";
+export const SAGE_LINK = "https://sagewallet.net";
 export const CHIALINKS_LINK = "https://chialinks.com/";
 export const SPACESCAN_LINK = "https://www.spacescan.io";
 export const MINTGARDEN_LINK = "https://mintgarden.io";

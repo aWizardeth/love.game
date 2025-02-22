@@ -31,10 +31,10 @@ export interface FileThemeCustomOptions {
   startIcon: string;
   closeIcon: string;
   background: string;
-  TelegramIcon: string;
-  DiscordIcon: string;
-  TwitterIcon: string;
-  heartbreakIcon: string;
+  telegramIcon: string;
+  discordIcon: string;
+  TwitterIcon: StaticImageData;
+  HeartBreakIcon: StaticImageData;
   heartbreakActiveButton: StaticImageData;
   heartbreakExitButton: StaticImageData;
   heartbreakDeadButton: StaticImageData;
@@ -44,6 +44,7 @@ export interface FileThemeCustomOptions {
   MintIcon:  StaticImageData;
   TradeIcon:  StaticImageData;
   DexieIcon:  StaticImageData;
+  SageIcon:  StaticImageData;
   TibetIcon: StaticImageData;
   FarmerIcon: StaticImageData;
   CLinksIcon: StaticImageData;
@@ -79,7 +80,7 @@ export interface IFileTheme {
   setWallpaper: (wallpaper: string) => void;
 }
 
-const defaultTheme: FileTheme = "vaporwave-arcade";
+const defaultTheme: FileTheme = "tang-gang";
 
 export const themeMap: { [key in FileTheme]: Partial<FileThemeCustomOptions> } =
   {
