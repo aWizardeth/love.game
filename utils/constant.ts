@@ -60,7 +60,9 @@ export const HOT_JAR_VERSION = 6;
 export const TELEGRAM_LINK = "https://t.me/loveethereum";
 export const TWITTER_LINK = "https://twitter.com/lovegameeth";
 export const WAR3_TWITTER_LINK = "https://twitter.com/webwar3";
-export const DISCORD_LINK = "https://discord.gg/loveethereum";
+export const DISCORD_LINK = "https://discord.gg/yU3qEpJhEP";
+
+
 export const BRIDGE_LINK = "https://warp.jono.tech/bridge";
 
 export const VOTE_LINK = "https://snapshot.org/#/love.awizard.eth";
@@ -68,6 +70,7 @@ export const VOTE_LINK = "https://snapshot.org/#/love.awizard.eth";
 //chia links
 export const CHIA_LINK = "https://www.chia.net/downloads/";
 export const GOBY_LINK = "https://www.goby.app";
+export const SAGE_LINK = "https://sagewallet.net";
 export const CHIALINKS_LINK = "https://chialinks.com/";
 export const SPACESCAN_LINK = "https://www.spacescan.io";
 export const MINTGARDEN_LINK = "https://mintgarden.io";

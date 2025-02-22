@@ -8,6 +8,8 @@ import {
   contractAddressWar,
   TipAddress,
   TipENS,
+  DISCORD_LINK,
+  TELEGRAM_LINK,
   BRIDGE_LINK,
   CHIA_LINK,
   CHIALINKS_LINK,
@@ -16,6 +18,7 @@ import {
   MINTGARDEN_LINK,
   XCHTRADE_LINK,
   DEXIE_LINK,
+  SAGE_LINK,
   TIBETSWAP_LINK,
   FARMERVERSE_LINK,
   TG_DISCORD_LINK,
@@ -45,6 +48,8 @@ import {
   MAX_X_LINK,
   MAX_TREE_LINK,
   MAX_ART_LINK,
+  TWITTER_LINK,
+  WAR3_TWITTER_LINK,
 } from "../utils/constant";
 import { FileThemeContext } from "../system/context/FileThemeContext";
 
@@ -57,7 +62,7 @@ const BottomBar = (props: Props) => {
   const [sidePosition, setSidePosition] = useState<number | null>(null);
 
   const [showSide2, setShowSide2] = useState<boolean>(false);
-const [sidePosition2, setSidePosition2] = useState<number | null>(null);
+  const [sidePosition2, setSidePosition2] = useState<number | null>(null);
 
 
   //const [menuItemId, setMenuItemId] = useState<string>("");
@@ -82,9 +87,12 @@ const [sidePosition2, setSidePosition2] = useState<number | null>(null);
       MintIcon,
       TradeIcon,
       DexieIcon,
+      SageIcon,
       TibetIcon,
       FarmerIcon,
-      heartbreakIcon,
+      HeartBreakIcon,
+      discordIcon,
+      telegramIcon,
       SettingsIcon,
       ShutdownIcon,
       TwitterIcon,
@@ -136,31 +144,16 @@ const [sidePosition2, setSidePosition2] = useState<number | null>(null);
       haveSub: true,
     },
     {
+      menu: "loveeth",
+      icon: LoveIcon,
+      name: "L<u>O</u>VE",
+      haveSub: true,
+    },
+    {
       menu: "bridge",
       icon: HeartBridgeIcon,
       name: "Warp<u>B</u>ridge",
       link: BRIDGE_LINK,
-    },
-    {
-      menu: "farm",
-      icon: FarmIcon,
-      name: "<u>F</u>arm",
-    },
-    {
-      menu: "heartbreak",
-      icon: heartbreakIcon,
-      name: "<u>H</u>EARTBREAK",
-    },
-    {
-      menu: "paper",
-      icon: PaperIcon,
-      name: "<u>P</u>aper",
-    },
-    {
-      menu: "vote",
-      icon: VoteIcon,
-      name: "<u>V</u>ote",
-      link: VOTE_LINK,
     },
     {
       menu: "settings",
@@ -175,11 +168,59 @@ const [sidePosition2, setSidePosition2] = useState<number | null>(null);
     },
   ];
 
+  const list_loveeth = [
+    {
+      menu: "simpleswap",
+      icon: LoveIcon,
+      name: "<u>S</u>imple Swap",
+    },
+    {
+      menu: "discord",
+      icon: discordIcon,
+      name: "<u>D</u>iscord",
+      link: DISCORD_LINK,
+    },
+    {
+      menu: "telegram",
+      icon: telegramIcon,
+      name: "<u>T</u>elegram",
+      link: TELEGRAM_LINK,
+    },
+    {
+      menu: "ltwitter",
+      icon: TwitterIcon,
+      name: "<u>L</u>ove X",
+      link: TWITTER_LINK,
+    },
+    {
+      menu: "wtwitter",
+      icon: TwitterIcon,
+      name: "<u>W</u>ar X",
+      link: WAR3_TWITTER_LINK,
+    },
+    {
+      menu: "farm",
+      icon: FarmIcon,
+      name: "<u>F</u>arm",
+    },
+    {
+      menu: "heartbreak",
+      icon: HeartBreakIcon,
+      name: "<u>H</u>EARTBREAK",
+    },
+    {
+      menu: "paper",
+      icon: PaperIcon,
+      name: "<u>P</u>aper",
+    },
+  ];
+
   const list_cp = [
     {
-      menu: "swap",
-      icon: LoveIcon,
-      name: "<u>D</u>ev",
+      menu: "vote",
+      icon: VoteIcon,
+      name: "<u>V</u>ote",
+      link: VOTE_LINK,
     },
     {
       menu: "cp",
@@ -233,6 +274,12 @@ const [sidePosition2, setSidePosition2] = useState<number | null>(null);
       icon: GobyIcon,
       name: "<u>B</u>rowser Wallet",
       link: GOBY_LINK,
+    },
+    {
+      menu: "sage",
+      icon: SageIcon,
+      name: "<u>S</u>age Wallet",
+      link: SAGE_LINK,
     },
     {
       menu: "chia_links",
@@ -299,7 +346,7 @@ const [sidePosition2, setSidePosition2] = useState<number | null>(null);
     },
     {
       menu: "tangbears",
-      icon: TangbearsIcon,
+      icon: BasebearsIcon,
       name: "<u>T</u>ang Bears",
       link: TANGBEARS_LINK,
     },
@@ -364,7 +411,7 @@ const [sidePosition2, setSidePosition2] = useState<number | null>(null);
   const list_max = [
     {
       menu: "tREE",
-      icon: "🌳",
+      icon: "🌳", // Tree emoji as a string
       name: "<u>t</u>REE",
       link: MAX_TREE_LINK,
     },
@@ -500,11 +547,11 @@ const [sidePosition2, setSidePosition2] = useState<number | null>(null);
              style={{
              
               bottom: list[sidePosition]?.menu === "settings" ? `${34}px` : 
-              list[sidePosition]?.menu === "omakasea" ? `${105}px` : 
-
-              list[sidePosition]?.menu === "chia" ? `${19}px` : 
-              list[sidePosition]?.menu === "featured" ? `${197}px` :
-              (list[sidePosition]?.menu === "tanggang" ? `${103}px` :   "auto"),
+              list[sidePosition]?.menu === "omakasea" ? `${70}px` : 
+              list[sidePosition]?.menu === "loveeth" ? `${30}px` : 
+              list[sidePosition]?.menu === "chia" ? `${0}px` : 
+              list[sidePosition]?.menu === "featured" ? `${100}px` :
+              (list[sidePosition]?.menu === "tanggang" ? `${70}px` :   "auto"),
 
               left: "56%", // Position it to the right of the parent container
                transform: "translateX(-8px)", // Adjust as needed for alignment
@@ -528,6 +575,19 @@ const [sidePosition2, setSidePosition2] = useState<number | null>(null);
             list_omak.map((item, index) => (
               <PanelListItem
                 key={`omakasea-panel-list-item-${index}`}
+                onSelected={(selected) => props.setSelected(selected)}
+                onShowSide={(showSide) => handleShowSide(showSide, index)}
+                icon={item.icon}
+                name={item.name}
+                menu={item.menu}
+                link={item.link} // Pass the link prop
+                    />
+            ))}
+
+          {list[sidePosition]?.menu === "loveeth" &&
+            list_loveeth.map((item, index) => (
+              <PanelListItem
+                key={`loveeth-panel-list-item-${index}`}
                 onSelected={(selected) => props.setSelected(selected)}
                 onShowSide={(showSide) => handleShowSide(showSide, index)}
                 icon={item.icon}
@@ -585,11 +645,11 @@ const [sidePosition2, setSidePosition2] = useState<number | null>(null);
             <div
               className="absolute bg-[#C1C1C1] w-[160px] border-r-2 border border-b-2 border-b-black border-r-black border-t-white border-l-white overflow-y-auto max-h-[100.0vh] ml-2"
               style={{
-                bottom: list_featured[sidePosition2]?.menu === "pain" ? `${265}px` :
-                list_featured[sidePosition2]?.menu === "dbc" ? `${231}px` :
-                list_featured[sidePosition2]?.menu === "max" ? `${302}px` :
-                list_featured[sidePosition2]?.menu === "speechless" ? `${197}px` :
-                list_featured[sidePosition2]?.menu === "nemo" ? `${266}px` : "auto",
+                bottom: list_featured[sidePosition2]?.menu === "pain" ? `${169}px` :
+                list_featured[sidePosition2]?.menu === "dbc" ? `${135}px` :
+                list_featured[sidePosition2]?.menu === "max" ? `${192}px` :
+                list_featured[sidePosition2]?.menu === "speechless" ? `${100}px` :
+                list_featured[sidePosition2]?.menu === "nemo" ? `${169}px` : "auto",
                 left: "100%", // Position it to the right of the parent container
                 transform: "translateX(-8px)", // Adjust as needed for alignment
               }}
