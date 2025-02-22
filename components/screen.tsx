@@ -45,7 +45,6 @@ const Screen = ({
     LoveIcon, MglthIcon, 
     GooeyIcon, BridgeIcon, 
     HeartBridgeIcon, TwitterIcon, 
-
     VoteIcon } } = useContext(FileThemeContext)
  // const { address, connector, isConnected } = useAccount();
   //const [hide, setHide] = useState<boolean>(true);
