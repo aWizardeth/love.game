@@ -180,7 +180,7 @@ const Win98 = (props: Props) => {
       icon: SettingsIcon,
     },
     {
-      menu: "simpleswap",
+      menu: "swap",
       title: "LOVE SWAP",
       component: <Swap />,
       width: "720px",

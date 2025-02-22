@@ -5,9 +5,6 @@ import { useFetchFarmData } from "../system/hooks/useFetchFarmData";
 import Hero from "./heroswap";
 import Simple from "./simpleswap";
 
-//import Green from "./greenswap";
-
-
 import { useWrongNetwork } from "../system/hooks/useWrongNetwork";
 import { WalletConnectButton } from "./ui/WallectConnectButton";
 
@@ -46,13 +43,6 @@ const Swap = () => {
                 }}
                 isSelected={tab === "hero"}
               />
-              <StakingSelectTab
-                title=""
-                onClick={() => {
-                  setTab("green");
-                }}
-                isSelected={tab === "green"}
-              />
 
 
             </div>
@@ -60,13 +50,6 @@ const Swap = () => {
         </div>
       </div>
       <div className="w-full h-[400px] overflow-y-auto border-l-gray-200 border-t-gray-200 border-r-gray-600 border-b-gray-600 portrait:border-b-0 border-2 p-2 mb-2">
-
-        
-        {tab === "simple" && <Simple />}
-
-        {tab === "hero" && <Hero />}
-        {tab === "green" && <Hero />}
-
         {(isWrongNetwork || !address) && !poolDataLoading && (
           <WalletConnectButton
             connectWalletElement={

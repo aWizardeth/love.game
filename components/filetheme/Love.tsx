@@ -7,7 +7,6 @@ import { default as ChiaIcon, default as TradeIcon } from "../../assets/chia-ico
 import CLinksIcon from "../../assets/clinks-icon.png"
 import DeadButton from "../../assets/dead-game-button.png"
 import DexieIcon from "../../assets/dexie-icon.svg"
-import SageIcon from "../../assets/sage-icon.png"
 import DexscreenerIcon from "../../assets/dexscreener-icon.png"
 import EtherscanIcon from '../../assets/etherscan.png'
 import ExitButton from "../../assets/exit-button.png"
@@ -17,14 +16,12 @@ import GobyIcon from "../../assets/goby-icon.png"
 import HeartBridgeIcon from "../../assets/heart-bridge-icon.png"
 import HoaIcon from "../../assets/hoa-icon.png"
 import LoveIcon from '../../assets/love-icon.png'
-import HeartBreakIcon from '../../assets/heartbreak-icon.png'
 import MglthIcon from "../../assets/mglth-icon.png"
 import MintIcon from "../../assets/mint-icon.svg"
 import SettingsIcon from '../../assets/settings.png'
 import ShutdownIcon from '../../assets/shutdown.png'
 import SpaceIcon from "../../assets/space-icon.png"
 import TangbearsIcon from "../../assets/tangbears-icon.png"
-import TwitterIcon from "../../assets/twitter-icon.png"
 import TGtwitterIcon from "../../assets/tgtwitter-icon.png"
 import TGDiscordIcon from "../../assets/tgdiscord-icon.png"
 import TibetIcon from "../../assets/tibet-icon.jpg"
@@ -75,7 +72,6 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     MintIcon, 
     TradeIcon, 
     DexieIcon, 
-    SageIcon, 
     TibetIcon, 
     FarmerIcon,
     CLinksIcon,
@@ -88,7 +84,7 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     TGDiscordIcon,
     SettingsIcon,
     ShutdownIcon,
-    HeartBreakIcon,
+
     MaxIcon,
     ArtIcon,
     NemoIcon,
@@ -105,10 +101,10 @@ const themeMap : Partial<FileThemeCustomOptions> = {
     startIcon: '/assets/start-icon.png',
     closeIcon: "/assets/win98Close.png",
     background: '/assets/lovegame_background.png',
-    
-    TwitterIcon,
-    discordIcon: '/assets/logo_discord2.png',
-    telegramIcon: '/assets/logo_telegram.png',
+    TelegramIcon: '/assets/logo_telegram.png',
+    TwitterIcon: '/assets/logo_twitter.png',
+    DiscordIcon: '/assets/logo_discord.png',
+    heartbreakIcon: '/assets/start-icon.png',
     
     heartbreakActiveButton: ActiveButton,
     heartbreakExitButton: ExitButton,
