@@ -61,7 +61,7 @@ export const TELEGRAM_LINK = "https://t.me/loveethereum";
 export const TWITTER_LINK = "https://twitter.com/lovegameeth";
 export const WAR3_TWITTER_LINK = "https://twitter.com/webwar3";
 export const DISCORD_LINK = "https://discord.gg/loveethereum";
-export const BRIDGE_LINK = "https://warp.jono.tech/bridge";
+export const BRIDGE_LINK = "https://warp.awizard.dev/bridge";
 
 export const VOTE_LINK = "https://snapshot.org/#/love.awizard.eth";
 
@@ -114,7 +114,7 @@ export const AWIZARD_X_LINK = "https://x.com/aWizardeth";
 export const MAX_X_LINK = "https://x.com/_6ess";
 export const MAX_LINK = "https://x.com/_6ess";
 export const MAX_TREE_LINK = "https://dexie.space/assets/🌳";
-export const MAX_ART_LINK = "https://dexie.space/assets/🌳";
+export const MAX_ART_LINK = "https://mintgarden.io/profile/omakasea-669014c72aff553bbebcb2224d1f49c24a83736a797b92498d6cf9a52817248b";
 
 
 export const IS_DEV_ENV = process.env.NEXT_PUBLIC_ENABLE_TESTNETS === "true";
